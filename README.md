@@ -12,22 +12,20 @@ In this compiler, we have this <code>+</code>, <code>-</code>, <code>*</code>, <
 
 ## Parser.y
 1) To determine Tokens:
-   <code>
-      %token <str> ID
-      %token <num> NUMBER
-      %token PLUS MINUS MULT DIV LPAREN RPAREN ASSIGN SEMICOLON
-   </code>
+   
+         %token <str> ID
+         %token <num> NUMBER
+         %token PLUS MINUS MULT DIV LPAREN RPAREN ASSIGN SEMICOLON
 2) To determine the mentioned speciafications of PLUS and MINUS, i used an ambiguous grammar and these two lines (in <code>Parser.y</code> file):
-   <code>
-      %left MULT DIV
-      %right PLUS MINUS
-   </code>
+   
+         %left MULT DIV
+         %right PLUS MINUS
 3) To determine start symbol and types of grammar Non-terminals:
-   <code>
-      %start stmt
-      %type <str> stmt
-      %type <val> expr
-   </code>
+   
+         %start stmt
+         %type <str> stmt
+         %type <val> expr
+   
 
 ## Guidance (Help) files
 1) <code>Lex & Flex.pdf</code>: What is Lex and Flex? ...
@@ -38,7 +36,7 @@ In this compiler, we have this <code>+</code>, <code>-</code>, <code>*</code>, <
 ## How to run?
 I have executed this files in Windows Subsystem for Linux (WSL); WSL is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting.
 
-Using these lines (in order), we can execute <code>.l</code> and <code>.y</code> codes in WSl (last line is an example for input expression) ...
+Using these lines (in order), we can execute <code>.l</code> and <code>.y</code> files in WSl (last line is an example for input expression) ...
 
       bison -d -o parser.c Parser.y
       flex -o lexer.c Scanner.l
