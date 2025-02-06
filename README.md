@@ -30,4 +30,10 @@ In this compiler, we have this <code>+</code>, <code>-</code>, <code>*</code>, <
    </code>
 
 ## Guidance (Help) files
+1) <code>Lex & Flex.pdf</code>: What is Lex and Flex? ...
+2) <code>Yacc & Bison.pdf</code>: What is Yacc and Bison? ...
+3) <code>Project Definition.pdf</code>: The problem statement and project definition.
+4) <code>Project Report & Description.pdf</code>: A complete description and report of the project and used codes.
 
+## How to run?
+I have executed this files in Windows Subsystem for Linux (WSL): a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting.
