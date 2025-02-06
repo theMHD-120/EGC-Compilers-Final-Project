@@ -38,10 +38,8 @@ In this compiler, we have this <code>+</code>, <code>-</code>, <code>*</code>, <
 ## How to run?
 I have executed this files in Windows Subsystem for Linux (WSL); WSL is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting.
 
-Using these lines, we can execute <code>.l</code> and <code>.y</code> codes in WSl (last line is an example for input expression) ...
-<code>
-   bison -d -o parser.c Parser.y
-   flex -o lexer.c Scanner.l
-   gcc -o compiler parser.c lexer.c -lm
-   echo "b = 20*(24/6)+45 -60;" | ./compiler
-</code>
+Using these lines (in order), we can execute <code>.l</code> and <code>.y</code> codes in WSl (last line is an example for input expression) ...
+      bison -d -o parser.c Parser.y
+      flex -o lexer.c Scanner.l
+      gcc -o compiler parser.c lexer.c -lm
+      echo "b = 20*(24/6)+45 -60;" | ./compiler
