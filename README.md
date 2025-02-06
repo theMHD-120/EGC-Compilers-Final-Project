@@ -10,4 +10,15 @@ In this compiler, we have this <code>+</code>, <code>-</code>, <code>*</code>, <
 
 <code>Parser.y</code>: Syntax analysis phase (to check syntax of input expression, generate intermediate representation (three-address code) and calculate the final result of input expression;
 
-<code>common.h</code>: A common header file (between <code>.l</code> and <code>.y</code> files) that contains a Factor struct to determine type of numbers during calculations (are they Numbers or Temporary values?) ...
+<code>common.h</code>: A common header file (between <code>.l</code> and <code>.y</code> files) that contains a Factor struct to determine type of numbers during calculations (are they Numbers or Temporary variables?) ...
+
+## Parser.y
+1) To determine Tokens:
+    %token <str> ID
+    %token <num> NUMBER
+    %token PLUS MINUS MULT DIV LPAREN RPAREN ASSIGN SEMICOLON
+3) To determine the mentioned speciafications of PLUS and MINUS, i used an ambiguous grammar and these two lines (in <code>Parser.y</code> file):
+<code>
+%left MULT, DIV;
+%right PLUS, MINUS;
+</code>
