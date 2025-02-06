@@ -1,4 +1,4 @@
-# EGC-Compilers-Final-Project
+# EGC-Compilers-Project-FLEX-YACC
 >>> Pirnciples of Compilers Design - Windter 2025
 
 Eqbal G Mansoori Compilers; a simple version of a compiler including mathematical expressions with specified rules and instructions. 
