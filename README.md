@@ -14,10 +14,12 @@ In this compiler, we have this <code>+</code>, <code>-</code>, <code>*</code>, <
 
 ## Parser.y
 1) To determine Tokens:
+   <code>
     %token <str> ID
     %token <num> NUMBER
     %token PLUS MINUS MULT DIV LPAREN RPAREN ASSIGN SEMICOLON
-3) To determine the mentioned speciafications of PLUS and MINUS, i used an ambiguous grammar and these two lines (in <code>Parser.y</code> file):
+   </code>
+2) To determine the mentioned speciafications of PLUS and MINUS, i used an ambiguous grammar and these two lines (in <code>Parser.y</code> file):
 <code>
 %left MULT, DIV;
 %right PLUS, MINUS;
