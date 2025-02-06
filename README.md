@@ -17,16 +17,17 @@ In this compiler, we have this <code>+</code>, <code>-</code>, <code>*</code>, <
       %token <num> NUMBER
       %token PLUS MINUS MULT DIV LPAREN RPAREN ASSIGN SEMICOLON
    </code>
-   
 2) To determine the mentioned speciafications of PLUS and MINUS, i used an ambiguous grammar and these two lines (in <code>Parser.y</code> file):
    <code>
       %left MULT DIV
       %right PLUS MINUS
    </code>
-
 3) To determine start symbol and types of grammar Non-terminals:
    <code>
       %start stmt
       %type <str> stmt
       %type <val> expr
    </code>
+
+## Guidance (Help) files
+
