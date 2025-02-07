@@ -34,7 +34,7 @@ In this compiler, we have this <code>+</code>, <code>-</code>, <code>*</code>, <
 4) <code>Project Report & Description.pdf</code>: A complete description and report of the project and used codes.
 5) <code>What is $$.png</code>: What is $$? synthesized attribute of each parent node (left-hand side non-terminal) in each production.
 
-## How to run?
+## How to execute?
 I have executed this files in Windows Subsystem for Linux (WSL); WSL is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting.
 
 Using these lines (in order), we can execute <code>.l</code> and <code>.y</code> files in WSl (last line is an example for input expression) ...
