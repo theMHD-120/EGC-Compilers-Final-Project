@@ -2,9 +2,9 @@
 >>> Pirnciples of Compilers Design - Windter 2025
 
 ## Project summary
-||| in the name of Allah |||
-Eqbal G Mansoori Compilers; a simple version of a compiler including mathematical expressions with specified rules and instructions. 
-
+||| In the name of ALLAH ||| <br />
+----------------------------- <br />
+Eqbal G Mansoori Compilers; a simple version of a compiler including mathematical expressions with specified rules and instructions. <br />
 In this compiler, we have this <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>(</code>, <code>)</code> and <code>=</code> operators and white spaces; oppsite of real expressions, in this compiler, PLUS and MINUS operators have higher priority than MULT and DIV operators; also PLUS and MINUS operators, have Right Associativity (left in reality :); consider these specifications and read documentation files in Guidance folder ...
 
 ## Main files
